@@ -65,4 +65,6 @@ Promise.race([[sleep(2000), sleep(5000)]])// .race выдает первый п�
 
 //Повторяем промисы 
 
-console.log('Hello from GIT');
+const unsleep = ms => new Promise(resolve => {
+    setTimeout(() =>  resolve(), ms)
+})
