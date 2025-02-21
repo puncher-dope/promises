@@ -144,16 +144,4 @@ const url ='https://dummyjson.com/products'
 // .then(() => console.log('fvhbfv'))
 
 
-//================================================================Перетекаем в react
-const app = document.body.querySelector('#app')
 
-function Avatar({src, ...rest }){
-    return` <img src="${src}" alt="${rest.alt}" style="border-radius:${rest.borderRadius}">`
-}
-
-
-app.innerHTML = Avatar({
-    src: 'https://ru.pinterest.com/pin/2024--605593481176659112/',
-    alt: 'trees',
-    borderRadius: '10px'
-})
